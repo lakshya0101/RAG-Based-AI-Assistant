@@ -12,8 +12,6 @@ import re
 from pathlib import Path
 from typing import Any
 
-import whisper
-
 from config import AUDIOS_DIR, JSONS_DIR, SOURCE_LANGUAGE, WHISPER_MODEL
 
 
@@ -45,6 +43,12 @@ def segments_to_chunks(segments: list[dict[str, Any]], number: str, title: str) 
 
 
 def main() -> None:
+    try:
+        import whisper
+    except ModuleNotFoundError:
+        print("Error: openai-whisper is not installed. Please run `pip install -r requirements.txt`.")
+        return
+
     JSONS_DIR.mkdir(parents=True, exist_ok=True)
     AUDIOS_DIR.mkdir(parents=True, exist_ok=True)
 
