@@ -307,14 +307,6 @@ For deploying the React frontend to Vercel and exposing the local backend via Cl
 
 ---
 
-## Author
-
-**Lakshya Dogra**  
-GitHub: [@lakshya0101](https://github.com/lakshya0101)  
-Repository: [https://github.com/lakshya0101/RAG-Based-AI-Assistant](https://github.com/lakshya0101/RAG-Based-AI-Assistant)
-
----
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
