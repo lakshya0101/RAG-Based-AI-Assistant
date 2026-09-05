@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Environment / OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Pipeline Generated Data (do not commit large video/audio/transcription files)
+videos/*
+!videos/.gitkeep
+audios/*
+!audios/.gitkeep
+jsons/*
+!jsons/.gitkeep
+new_jsons/*
+!new_jsons/.gitkeep
+
+# Embeddings & Runtime Artifacts
+*.joblib
+prompt.txt
+response.txt
+output.json
+
+# Documentation builds & temporary exports
+PROJECT_HANDBOOK.pdf
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/*.tsbuildinfo
