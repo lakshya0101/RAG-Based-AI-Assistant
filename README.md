@@ -97,8 +97,8 @@ You can run and test the complete system immediately without processing raw vide
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/rag-ai-teaching-assistant.git
-cd rag-ai-teaching-assistant
+git clone https://github.com/lakshya0101/RAG-Based-AI-Assistant.git
+cd RAG-Based-AI-Assistant
 
 # Create virtual environment
 python -m venv venv
@@ -263,9 +263,18 @@ Submit a question to receive an explanation citing video timestamps:
 
 ---
 
+## Limitations
+
+- **Local Inference Requirements**: Full local pipeline execution requires sufficient hardware (RAM/VRAM) to run Whisper and Ollama models (`bge-m3` and `llama3.2`).
+- **Cold-Start Latency**: The first LLM response in a session may experience a brief cold-start while Ollama loads the model weights into memory.
+- **Language Transcriptions**: Whisper translation default is configured for Hindi to English (`SOURCE_LANGUAGE=hi`), but can be overridden in `.env` for other languages.
+
+---
+
 ## Attribution & Acknowledgements
 
-- **Original Foundation**: Built upon the architectural foundation created by [Lakshya Arora (`Lakshya8725/Rag-based-ai-assistant`)](https://github.com/Lakshya8725/Rag-based-ai-assistant).
+- **Original Implementation**: [Lakshya Arora (`Lakshya8725/Rag-based-ai-assistant`)](https://github.com/Lakshya8725/Rag-based-ai-assistant)
+- **Current Modified & Maintained Version**: [Lakshya Dogra (`lakshya0101/RAG-Based-AI-Assistant`)](https://github.com/lakshya0101/RAG-Based-AI-Assistant)
 - Re-architected with centralized configuration, robust cross-platform error handling, automated sample data synthesis, enhanced API schemas, and upgraded frontend polish.
 
 ---

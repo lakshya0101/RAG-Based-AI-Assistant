@@ -129,7 +129,7 @@ Copy the generated `https://...ngrok-free.app` URL.
 
 1. Push your repository to your GitHub account.
 2. Log in to [Vercel](https://vercel.com) and click **Add New Project**.
-3. Import your GitHub repository `rag-ai-teaching-assistant`.
+3. Import your GitHub repository `RAG-Based-AI-Assistant`.
 4. In the configuration screen:
    - **Framework Preset**: Vite
    - **Root Directory**: `frontend`
